@@ -2,17 +2,15 @@
 # Create an array of usernames and passwords
 
 $usernames = [ordered]@{
-  "fjse01"     = "fsse01##fsse01##fsse01##";
-  "fjse02"     = "fsse02##fsse02##fsse02##";
-  "fjse03"     = "fsse03##fsse03##fsse03##";
-  "fjse04"     = "fsse04##fsse04##fsse04##";
-  "fjse05"     = "fsse05##fsse05##fsse05##";
-  "fjop01"     = "fsop01##fsop01##fsop01##";
-  "fjop02"     = "fsop02##fsop02##fsop02##";
-  "fjop03"     = "fsop03##fsop03##fsop03##";
-  "fjop04"     = "fsop04##fsop04##fsop04##";
-  "fjop05"     = "fsop05##fsop05##fsop05##";
-  "iac-user01" = "@Fujitsuse!234S6";
+  "user1" = "uuz9YleZfC7B9Z0";
+  "user2" = "uuz9YleZfC7B9Z0";
+  "user3" = "uuz9YleZfC7B9Z0";
+  "user4" = "uuz9YleZfC7B9Z0";
+  "user5" = "uuz9YleZfC7B9Z0";
+  "user6" = "uuz9YleZfC7B9Z0";
+  "user7" = "uuz9YleZfC7B9Z0";
+  "user8" = "uuz9YleZfC7B9Z0";
+  "user9" = "uuz9YleZfC7B9Z0";
 }
 
 # Initialize a flag to track if any command fails
@@ -34,7 +32,8 @@ foreach ($username in $usernames.Keys) {
   if ($LASTEXITCODE -ne 0) {
     Write-Host "Failed to disable password expiration for $username.`n"
     $allCommandsSuccessful = $false
-  } else {
+  }
+  else {
     Write-Host "The command completed successfully.`n"
   }
 
@@ -46,6 +45,7 @@ foreach ($username in $usernames.Keys) {
 # Check if all commands were successful
 if ($allCommandsSuccessful) {
   Write-Host "All user usernames have been added, and settings have been applied."
-} else {
+}
+else {
   Write-Host "Some operations failed. Please check the log for more details."
 }
