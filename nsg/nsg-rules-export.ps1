@@ -1,6 +1,3 @@
-Import-Module Microsoft.Azure.PowerShell.Cmdlets.Network
-
-#------------------------------------------------------------------------------------------------------------------------------------#
 # Name of Resource Group
 $resourceGroupName = Read-Host -Prompt "Enter the name of the Resource Group"
 # $resourceGroupName = "[Resource Group Name]"
