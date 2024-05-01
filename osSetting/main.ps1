@@ -12,16 +12,16 @@ Write-Host "Step: 2-1 # Create maintenance user accounts. `n"
 # Create an array of usernames and passwords
 
 $usernames = [ordered]@{
-  "fjse01"     = "uuz9YleZfC7B9Z0";
-  "fjse02"     = "uuz9YleZfC7B9Z0";
-  "fjse03"     = "uuz9YleZfC7B9Z0";
-  "fjse04"     = "uuz9YleZfC7B9Z0";
-  "fjse05"     = "uuz9YleZfC7B9Z0";
-  "fjop01"     = "uuz9YleZfC7B9Z0";
-  "fjop02"     = "uuz9YleZfC7B9Z0";
-  "fjop03"     = "uuz9YleZfC7B9Z0";
-  "fjop04"     = "uuz9YleZfC7B9Z0";
-  "fjop05"     = "uuz9YleZfC7B9Z0";
+  "user01"     = "uuz9YleZfC7B9Z0";
+  "user02"     = "uuz9YleZfC7B9Z0";
+  "user03"     = "uuz9YleZfC7B9Z0";
+  "user04"     = "uuz9YleZfC7B9Z0";
+  "user05"     = "uuz9YleZfC7B9Z0";
+  "user-op01"  = "uuz9YleZfC7B9Z0";
+  "user-op02"  = "uuz9YleZfC7B9Z0";
+  "user-op03"  = "uuz9YleZfC7B9Z0";
+  "user-op04"  = "uuz9YleZfC7B9Z0";
+  "user-op05"  = "uuz9YleZfC7B9Z0";
   "iac-user01" = "@Fujitsuse!234S6";
 }  
 
